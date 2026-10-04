@@ -7,7 +7,7 @@ Official client libraries for the [Paymentsnp](https://paymentnp.com/developers)
 | `@paymentsnp/sdk` (+ `paymentsnp` CLI) | [`typescript/`](typescript/) | `npm install @paymentsnp/sdk` (**live on npm**) | Node 18+, Bun, Deno, edge |
 | `paymentsnp/paymentsnp-php` | [`php/`](php/) | `composer require paymentsnp/paymentsnp-php` (**live on Packagist**, published from [subaseyy/paymentsnp-php](https://github.com/subaseyy/paymentsnp-php)) | PHP 7.4+ (cURL) |
 | `paymentsnp` | [`python/`](python/) | `pip install paymentsnp` (**live on PyPI**) | Python 3.9+ (stdlib only) |
-| `@paymentsnp/mcp` | [`mcp/`](mcp/) | `npx @paymentsnp/mcp` | Node 20+, MCP server for Claude / Cursor |
+| `@paymentsnp/mcp` (0.1.0) | [`mcp/`](mcp/) | `npx -y @paymentsnp/mcp` (**live on npm**) | Node 20+, MCP server for Claude / Cursor |
 
 All packages have **zero runtime dependencies**, share the same resource and method names, keep the API's snake_case field names, and format money as `NPR 1,234.50` from integer paisa.
 
@@ -44,6 +44,6 @@ CI runs all of them on every push. Live end-to-end tests are skipped unless `PAY
 
 ## Publishing
 
-`@paymentsnp/sdk` is published on npm, `paymentsnp/paymentsnp-php` on Packagist (copy `php/` changes to `subaseyy/paymentsnp-php` and tag a release there) and `paymentsnp` on PyPI (`python -m build && twine upload dist/*` from `python/` for new versions). Still to publish: `mcp/` to npm.
+`@paymentsnp/sdk` is published on npm, `paymentsnp/paymentsnp-php` on Packagist (copy `php/` changes to `subaseyy/paymentsnp-php` and tag a release there) and `paymentsnp` on PyPI (`python -m build && twine upload dist/*` from `python/` for new versions). `@paymentsnp/mcp` is on npm too, so every package is published; bump the version and re-publish from each folder for new releases.
 
 The source of truth is the Paymentsnp monorepo (`sdks/`); changes there are copied here for release.
