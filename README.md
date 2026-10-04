@@ -2,9 +2,9 @@
 
 Official client libraries for the [Paymentsnp](https://paymentnp.com/developers) payment API: one checkout for eSewa, Khalti and Fonepay in Nepal. Money settles directly to your provider accounts; these libraries create checkouts, read verified payments, manage invoices and reconciliation, and verify signed webhooks.
 
-| Package | Folder | Install (once published) | Runtime |
+| Package | Folder | Install | Runtime |
 | --- | --- | --- | --- |
-| `@paymentsnp/sdk` (+ `paymentsnp` CLI) | [`typescript/`](typescript/) | `npm install @paymentsnp/sdk` | Node 18+, Bun, Deno, edge |
+| `@paymentsnp/sdk` (+ `paymentsnp` CLI) | [`typescript/`](typescript/) | `npm install @paymentsnp/sdk` (**live on npm**) | Node 18+, Bun, Deno, edge |
 | `paymentsnp/paymentsnp-php` | [`php/`](php/) | `composer require paymentsnp/paymentsnp-php` | PHP 7.4+ (cURL) |
 | `paymentsnp` | [`python/`](python/) | `pip install paymentsnp` | Python 3.9+ (stdlib only) |
 | `@paymentsnp/mcp` | [`mcp/`](mcp/) | `npx @paymentsnp/mcp` | Node 20+, MCP server for Claude / Cursor |
@@ -44,6 +44,6 @@ CI runs all of them on every push. Live end-to-end tests are skipped unless `PAY
 
 ## Publishing
 
-Not yet published. Before the first release: confirm the licence, then publish `typescript/` and `mcp/` to npm, `php/` to Packagist (point Packagist at this repo with a subtree split or move it to its own repo, since Packagist expects `composer.json` at a repository root), and `python/` to PyPI (`python -m build && twine upload dist/*`).
+`@paymentsnp/sdk` is published on npm. Still to publish: `mcp/` to npm, `php/` to Packagist (point Packagist at this repo with a subtree split or move it to its own repo, since Packagist expects `composer.json` at a repository root), and `python/` to PyPI (`python -m build && twine upload dist/*`).
 
 The source of truth is the Paymentsnp monorepo (`sdks/`); changes there are copied here for release.

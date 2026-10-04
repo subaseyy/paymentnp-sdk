@@ -15,15 +15,10 @@ signed webhooks.
 
 ## Install
 
-The package is **not yet published to npm**. Until it is, build a tarball and install that:
-
 ```sh
-npm --prefix sdks/typescript install
-npm --prefix sdks/typescript pack          # writes paymentsnp-sdk-1.0.0.tgz
-npm install /path/to/paymentsnp-sdk-1.0.0.tgz
+npm install @paymentsnp/sdk
+# pnpm add @paymentsnp/sdk · yarn add @paymentsnp/sdk · bun add @paymentsnp/sdk
 ```
-
-Once published it will be `npm install @paymentsnp/sdk`.
 
 ## Quickstart
 
