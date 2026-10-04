@@ -5,7 +5,7 @@ Official client libraries for the [Paymentsnp](https://paymentnp.com/developers)
 | Package | Folder | Install | Runtime |
 | --- | --- | --- | --- |
 | `@paymentsnp/sdk` (+ `paymentsnp` CLI) | [`typescript/`](typescript/) | `npm install @paymentsnp/sdk` (**live on npm**) | Node 18+, Bun, Deno, edge |
-| `paymentsnp/paymentsnp-php` | [`php/`](php/) | `composer require paymentsnp/paymentsnp-php` | PHP 7.4+ (cURL) |
+| `paymentsnp/paymentsnp-php` | [`php/`](php/) | `composer require paymentsnp/paymentsnp-php` (**live on Packagist**, published from [subaseyy/paymentsnp-php](https://github.com/subaseyy/paymentsnp-php)) | PHP 7.4+ (cURL) |
 | `paymentsnp` | [`python/`](python/) | `pip install paymentsnp` | Python 3.9+ (stdlib only) |
 | `@paymentsnp/mcp` | [`mcp/`](mcp/) | `npx @paymentsnp/mcp` | Node 20+, MCP server for Claude / Cursor |
 
@@ -44,6 +44,6 @@ CI runs all of them on every push. Live end-to-end tests are skipped unless `PAY
 
 ## Publishing
 
-`@paymentsnp/sdk` is published on npm. Still to publish: `mcp/` to npm, `php/` to Packagist (point Packagist at this repo with a subtree split or move it to its own repo, since Packagist expects `composer.json` at a repository root), and `python/` to PyPI (`python -m build && twine upload dist/*`).
+`@paymentsnp/sdk` is published on npm and `paymentsnp/paymentsnp-php` on Packagist (copy `php/` changes to `subaseyy/paymentsnp-php` and tag a release there). Still to publish: `mcp/` to npm and `python/` to PyPI (`python -m build && twine upload dist/*`).
 
 The source of truth is the Paymentsnp monorepo (`sdks/`); changes there are copied here for release.
