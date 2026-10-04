@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.tgz
+__pycache__/
+*.egg-info/
+.DS_Store
+.env

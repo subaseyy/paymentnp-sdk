@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paymentsnp"
+version = "1.0.0"
+description = "Official Python SDK for the Paymentsnp payment API (eSewa, Khalti, Fonepay checkout for Nepal)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+keywords = ["paymentsnp", "payments", "nepal", "esewa", "khalti", "fonepay", "checkout"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://paymentnp.com/developers"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+paymentsnp = ["py.typed"]

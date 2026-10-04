@@ -1,0 +1,19 @@
+{
+  "name": "paymentsnp/paymentsnp-php",
+  "description": "Official PHP SDK for the Paymentsnp payment API (eSewa, Khalti, Fonepay checkout for Nepal).",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["paymentsnp", "payments", "nepal", "esewa", "khalti", "fonepay", "checkout"],
+  "homepage": "https://paymentnp.com/developers",
+  "require": {
+    "php": ">=7.4",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": { "Paymentsnp\\": "src/" }
+  },
+  "scripts": {
+    "test": "php tests/run.php"
+  }
+}

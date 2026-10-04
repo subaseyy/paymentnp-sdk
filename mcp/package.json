@@ -1,0 +1,11 @@
+{
+  "name": "@paymentsnp/mcp",
+  "version": "0.1.0",
+  "description": "Model Context Protocol (MCP) server for Paymentsnp: let Claude, Cursor and other MCP clients read checkouts, payments, invoices and reconciliation.",
+  "type": "module",
+  "main": "server.js",
+  "bin": { "paymentsnp-mcp": "server.js" },
+  "files": ["server.js", "README.md"],
+  "engines": { "node": ">=20" },
+  "scripts": { "test": "node --test" }
+}
